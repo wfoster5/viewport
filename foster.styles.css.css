@@ -72,7 +72,21 @@ table {
 
 
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
+.theme-a{
+    background: #fff;
+    color: #000;
+}
+.theme-b{
+    background: #000;
+    color: #fff;
+}
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: #fff;
+    }
+}
 
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
 
