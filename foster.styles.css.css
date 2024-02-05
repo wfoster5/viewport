@@ -147,13 +147,14 @@ footer .icon{
 
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
-    @media (prefers-reduced-motion:reduced){}
+    @media (prefers-reduced-motion:reduced){
     @-webkit-keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
     @keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
+}
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
 
@@ -188,7 +189,7 @@ section{
 }
 
 /* ---------- EXTRA SMALL SCREEN STYLES ---------- */
-    @media screen and(max-width:600px){
+    @media screen and(min-width:600px){
 header, footer{
     background-color: var(--pink);
     color: var(--white);
